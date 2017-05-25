@@ -83,14 +83,14 @@ app.get("/users/login", function(req, res) {
     res.render("login")
 })
 
-// app.post("/users/login", function(req, res) {
-//     if(req.body.username == "teacher123" && req.body.password == "teacher123"){
-//         res.redirect("/users")
-//     }else{
-//         res.send("Incorrect login")
-//     }
+app.post("/users/login", function(req, res) {
+    if(req.body.username == "teacher123" && req.body.password == "teacher123"){
+        res.redirect("/users")
+    }else{
+        res.send("Incorrect login")
+    }
     
-// })
+})
 
 //CREATING USERS FORM
 app.get("/users/new", function(req, res) {
