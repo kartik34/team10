@@ -7,7 +7,8 @@ var express    = require("express"),
 
 app.use(methodoverride("_method")); 
 app.use(bodyparser.urlencoded({extended:true}))
-mongoose.connect("mongodb://localhost/photos")
+//mongoose.connect("mongodb://localhost/photos")
+mongoose.connect("mongodb://kartik:kartik@ds153521.mlab.com:53521/dragndrop")
 app.set("view engine", "ejs"); 
 app.use(express.static("public"))
  
