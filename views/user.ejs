@@ -1,0 +1,26 @@
+
+<% include partials/header3 %>
+<div class = "stuff">
+<a id = "link" href="/photos/new/<%= user[0].name %>"><button class="fluid ui button">Add an Image</button></a>
+<br>
+<br>
+<br>
+<div class = "ui container">
+<div class = "ui five column grid ">
+        <%  for(var i = 0; i < user.length; i++){ %>
+             <% if(user[i].number == 2){ %>
+           
+             <div class = column>
+            
+                <img width = "100%" height = "auto" src= "<%= user[i].url %>" class = "no">
+                <h4 class = "no"><strong><%= user[i].caption %></strong> </h4>
+                <form method = "POST" action = "/photos/photo/<%= user[i]._id %>?_method=DELETE">
+                    <BUTTON class="ui basic button">Delete</BUTTON>
+                </form>
+           </div>
+           <% } %>
+ <% } %>
+ </div>
+</div>
+ <% include partials/footer %>
+

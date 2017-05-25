@@ -1,0 +1,42 @@
+
+<% include partials/header3 %> 
+<div class = "stuff create">
+<script>
+    var link = ""; 
+    var client = filestack.init('AcoM1PPDTiqwg6kIGjOLGz');
+    function showPicker() {
+        client.pick({
+        }).then(function(result) {
+            console.log(result.filesUploaded[0]["url"].slice(33));
+            document.getElementById("form").setAttribute("action", "/photos/" + result.filesUploaded[0]["url"].slice(33)+ "/" + "<%= name %>"); 
+          
+        
+           
+        });
+    }
+</script>
+<div class = "ui secondary raised text container segment margin">
+    <h1>Add a Photo</h1>
+    <form id = "form"  method="POST">
+        
+        <div class="ui large form">
+      <div class="two fields">
+        <div class="field">
+          <label>Image</label>
+          <input class="ui submit positive button" type="button" value="Upload" onclick="showPicker()" />
+        </div>
+        <div class="field">
+          <label>Caption</label>
+          <input type = "text" name = "caption" placeholder="Photo Caption">
+        </div>
+      </div>
+      <button class="ui submit negative button">Submit</button>
+    </div>
+        
+        
+    </form>
+  
+
+</div>
+</div>
+<% include partials/footer %> 

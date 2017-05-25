@@ -1,0 +1,95 @@
+div.high{
+
+    border: 2px solid rgb(102, 0, 102);
+     border-radius: 25px;
+     height: 35%;
+     margin-top: 10%;
+}
+div.bottom{
+ 
+    width: 700px;
+    border: 2px solid rgb(102, 0, 102);
+    height: 350px;
+   margin-left: 25%;
+   margin-top: 3%;
+    border-radius: 25px;
+}
+
+div.content{
+    margin-top: 100px;
+    
+}
+div.x{
+    margin-top: 5px;
+}
+
+
+div.y{
+    margin-top: 50px;
+}
+.img{
+    margin: 20px;
+    margin-top: 30px;
+ 
+    
+}
+body{
+    text-align: center;
+    
+}
+.dog{
+   
+    width: 150px;
+    margin: 10px;
+    height: 150px;
+    
+}
+
+div.stuff{
+    margin-top: 44px;
+}
+div.stuff.create{
+    margin-top: 80px;
+}
+div.dog{
+     background-color:  rgb(0, 255, 204);
+    border-radius: 25px;
+}
+h4.no{
+    margin:0px;
+}
+.divider{
+    border-left: 2px solid rgb(0, 255, 204); 
+    border-right: 2px solid rgb(0, 255, 204); 
+    height:107%;
+}
+.segment{
+    margin-top: 5px;
+}
+#link{
+    margin-bottom: 10px;
+}
+
+.button{
+    margin-top: 50px;
+}
+.seg{
+    height: 130px;
+}
+.names{
+    margin-top: 2px;
+}
+div.no.cat{
+    margin-top: 20px;
+}
+.container.grid{
+    margin: 0px;
+    
+}
+div.no{
+    width: 100%;
+}
+div.column.divider{
+    margin:0px;
+    padding:0px;
+}

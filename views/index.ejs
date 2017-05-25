@@ -1,0 +1,67 @@
+
+<% include partials/header %> 
+
+    <div class = "ui five column grid high">
+        <div class = "row">
+            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)" >
+            Period 1
+            </div>
+            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">
+            Period 2
+            </div>
+            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">
+            Lunch
+            </div>
+            
+            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">
+            Period 3
+            </div>
+            
+            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">
+            Period 4
+            </div>
+         </div>
+</div>
+    
+   
+    
+    
+      <div class="row text-center bottom" style= "display:flex; flex-wrap:wrap">
+        
+        <%  for(var i = 0; i < photos.length; i++){ %>
+          <% if(photos[i].number == 2){ %>
+            <div class = "dog cat" width = "100px" height="auto" ondrop="drop(event)" ondragover="allowDrop(event)">
+                 
+                <div draggable="true" ondragstart="drag(event)" id="drag <%= photos[i].caption %>"  class = "no" >
+                   
+                    <div class = "cat no" >
+                    
+                     <img width = "75%" height = "75%" src= "<%= photos[i].url %>" class = "no" draggable="true" ondragstart="drag(event)" id="drag <%= photos[i].caption %>" >
+                
+             
+                    <h4 class = "no"  draggable="true" ondragstart="drag(event)" id="drag <%= photos[i].caption %>" >
+                    <strong  class = "no" draggable="true" ondragstart="drag(event)" id="drag <%= photos[i].caption %>" ><%= photos[i].caption %></strong> </h4>
+                    
+                    <form class = "no" method = "POST" action = "/photos/index/<%= photos[i]._id %>?_method=DELETE">
+                        <BUTTON  class="no">Delete</BUTTON>
+                    </form>
+                    
+                    </div>
+                     
+                </div>
+              
+           
+            </div>
+       
+          
+        <% } %>
+    <% } %>
+ </div>   
+        
+  
+    
+<a   href="/"><button class="ui button">Home</button></a>
+
+</div>
+
+<% include partials/footer %> 

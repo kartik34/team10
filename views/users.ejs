@@ -1,0 +1,22 @@
+<% include partials/header3 %>
+<div class = "stuff">
+<a  class = "margins" href="/users/new"><button class="fluid ui button">Create a New User</button></a>
+<% for(var i = 0; i < users.length; i++){ %>
+    <div class = "ui secondary raised text container segment"> 
+      <h1> <%= users[i].name %> </h1>
+   
+        <form method = "GET" action = "/users/<%= users[i].name %>" >
+                <BUTTON class="ui basic button">Edit Schedule</BUTTON>
+         </form> 
+       
+         <form class = "float" method = "POST" action = "/photos/user/<%= users[i]._id %>?_method=DELETE">
+                    <BUTTON class="ui basic button">Delete</BUTTON>
+         </form>
+       
+ 
+     </div>
+     
+<% } %>
+</div>
+
+<% include partials/footer %>

@@ -1,0 +1,25 @@
+<% include partials/header %>
+<div class = "stuff create">
+
+<% for(var i = 0; i < users.length; i++){ %>
+    <a href="/photos/<%= users[i].name %>">
+    <div class = "ui secondary raised text container segment seg"> 
+    <br>
+
+      <h1 class = "names"> <%= users[i].name %> </h1>
+   
+     </div>
+     <br>
+     </a>
+     
+<% } %>
+<a href = "/users">
+      <div class = "ui secondary raised text container segment seg"> 
+        <br class = "sep">
+      <h1 class = "names"> Teachers </h1>
+   
+        </div>
+    </a>
+</div>
+
+<% include partials/footer %>
