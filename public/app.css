@@ -2,7 +2,7 @@ div.high{
 
     border: 2px solid rgb(102, 0, 102);
      border-radius: 25px;
-     height: 45%;
+     height: 35%;
      
      
 }
@@ -61,8 +61,8 @@ h4.no{
 }
 .divider{
     border-left: 2px solid rgb(0, 255, 204); 
-    border-right: 2px solid rgb(0, 255, 204); 
-    height:107%;
+    
+    
 }
 .segment{
     margin-top: 5px;
