@@ -1,4 +1,5 @@
-//mongod --dbpath /data/db --repair
+ //mongod --dbpath /data/db --repair
+ //API key for text-to-speech: 	6f7972b0edb542a4afbb49e59a3d6776
 var express    = require("express"),
     app        = express(),
     bodyparser = require("body-parser"),
@@ -28,7 +29,7 @@ var Photo = mongoose.model("Photo", photoSchema)
 
 
 app.get("/", function(req,res){
-        Photo.find({number: 1},function(err, users){
+    Photo.find({number: 1},function(err, users){
       if(err){
         console.log(err)
       }else{
