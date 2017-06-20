@@ -1,35 +1,35 @@
 
 
 <% include partials/header %> 
-
+<hr style="height:25pt; visibility:hidden;" />
     <div class = "ui five column grid high">
         <div class = "row">
             <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)" >
-            <p>
+            <h3>
                 Period 1
-            </p>
+            </h3>
             </div>
             <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">
-         <p>
+            <h3>
                 Period 2
-            </p>
+            </h3>
             </div>
             <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <p>
+            <h3>
                 Lunch
-            </p>
+            </h3>
             </div>
             
             <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">
-           <p>
+           <h3>
                 Period 3
-            </p>
+            </h3>
             </div>
             
             <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">
-           <p>
+           <h3>
                 Period 4
-            </p>
+            </h3>
             </div>
          </div>
 </div>
@@ -50,8 +50,8 @@
                      <img onclick='responsiveVoice.speak("<%= photos[i].caption %>");' width = "75%" height = "auto" src= "<%= photos[i].url %>" class = "no" draggable="true" ondragstart="drag(event)" id="drag <%= photos[i].caption %>" >
                 
              
-                    <h4 class = "no"  draggable="true" ondragstart="drag(event)" id="drag <%= photos[i].caption %>" >
-                    <strong  class = "no" draggable="true" ondragstart="drag(event)" id="drag <%= photos[i].caption %>" ><%= photos[i].caption %></strong> </h4>
+                    <h2 class = "no"  draggable="true" ondragstart="drag(event)" id="drag <%= photos[i].caption %>" >
+                    <strong  class = "no" draggable="true" ondragstart="drag(event)" id="drag <%= photos[i].caption %>" ><%= photos[i].caption %></strong> </h2>
                     
                    <audio id="<%= photos[i].caption %>" src="http://api.voicerss.org/?key=6f7972b0edb542a4afbb49e59a3d6776&hl=en-us&src=<%= photos[i].caption %>"></audio>
                     
@@ -74,7 +74,7 @@
 </div>
 
 <div class="garbage" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(event)">
-  <p class = "garbage">All Done!</p>  
+  <h1 class = "garbage">All Done!</h1>  
     <center class = "garbage">
          <img width = "50%" width="50%" src="http://i.imgur.com/r0nVqFh.png">
     </center>
