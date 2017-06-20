@@ -11,8 +11,8 @@ div.bottom{
     width: 700px;
     border: 2px solid rgb(102, 0, 102);
     height: 350px;
-   margin-left: 25%;
-   margin-top: 3%;
+    margin-left: 23%;
+    margin-top: 3%;
     border-radius: 25px;
 }
 
@@ -93,4 +93,14 @@ div.no{
 div.column.divider{
     margin:0px;
     padding:0px;
+}
+div.garbage{
+
+
+    width: 350px;
+    height: 350px;
+    float:right;
+    margin-top: -350px;
+ 
+    margin-right: 45px;
 }

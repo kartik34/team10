@@ -55,15 +55,6 @@
                     
                    <audio id="<%= photos[i].caption %>" src="http://api.voicerss.org/?key=6f7972b0edb542a4afbb49e59a3d6776&hl=en-us&src=<%= photos[i].caption %>"></audio>
                     
-                          
-                   
-                    
-               
-                    
-                    <form class = "no" method = "POST" action = "/photos/index/<%= photos[i]._id %>?_method=DELETE">
-                        <BUTTON  class="no">Done</BUTTON>
-                    </form>
-                    
                     </div>
                      
                 </div>
@@ -76,14 +67,23 @@
     <% } %>
  </div>   
  
- <div>
-     
- </div>
-        
+ 
   
-    
-<a   href="/"><button class="ui button">Home</button></a>
+  
 
 </div>
+
+<div class="garbage" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(event)">
+  <p class = "garbage">All Done!</p>  
+    <center class = "garbage">
+         <img width = "50%" width="50%" src="http://i.imgur.com/r0nVqFh.png">
+    </center>
+   
+    
+    
+    
+</div>
+  
+<a   href="/"><button class="ui button">Home</button></a>
 
 <% include partials/footer %> 
