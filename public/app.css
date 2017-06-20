@@ -119,3 +119,6 @@ td{
     width: 400px;
   
 }
+th{
+      border: 4px solid gray;
+}
