@@ -12,8 +12,8 @@ div.bottom{
     width: 700px;
     border: 2px solid rgb(102, 0, 102);
     height: 350px;
-    margin-left: 23%;
-    margin-top: 3%;
+float: right;
+    margin-top: -600px;
     border-radius: 25px;
 }
 
@@ -104,8 +104,20 @@ div.garbage{
     width: 350px;
     height: 350px;
     float:right;
-    margin-top: -350px;
+    margin-top: -250px;
+    margin-left: -200px;
  
     margin-right: 45px;
 }
 
+table{
+    
+ 
+    border: collapse;
+}
+td{
+    border: 4px solid gray;
+    height:150px;
+    width: 400px;
+  
+}

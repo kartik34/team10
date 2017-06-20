@@ -1,38 +1,63 @@
 
 
 <% include partials/header %> 
-<hr style="height:25pt; visibility:hidden;" />
-    <div class = "ui five column grid high">
-        <div class = "row">
-            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)" >
-            <h3>
-                Period 1
-            </h3>
-            </div>
-            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <h3>
-                Period 2
-            </h3>
-            </div>
-            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <h3>
-                Lunch
-            </h3>
-            </div>
+<hr style="height:20pt; visibility:hidden;" />
+
+<table >
+  <tr  ondrop="drop(event)" ondragover="allowDrop(event)" >
+   
+    <td>
+      
+    
+    </td>
+  </tr>
+  <tr  ondrop="drop(event)" ondragover="allowDrop(event)">
+    <td>
+    
+    </td>
+  </tr>
+  <tr  ondrop="drop(event)" ondragover="allowDrop(event)">
+    <td>
+    
+    </td>
+  </tr>
+  <tr  ondrop="drop(event)" ondragover="allowDrop(event)">
+    <td>
+    
+    </td>
+  </tr>
+</table>
+<!--    <div class = "ui five column grid high">-->
+<!--        <div class = "row">-->
+<!--            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)" >-->
+<!--            <h3>-->
+<!--                Period 1-->
+<!--            </h3>-->
+<!--            </div>-->
+<!--            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+<!--            <h3>-->
+<!--                Period 2-->
+<!--            </h3>-->
+<!--            </div>-->
+<!--            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+<!--            <h3>-->
+<!--                Lunch-->
+<!--            </h3>-->
+<!--            </div>-->
             
-            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">
-           <h3>
-                Period 3
-            </h3>
-            </div>
+<!--            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+<!--           <h3>-->
+<!--                Period 3-->
+<!--            </h3>-->
+<!--            </div>-->
             
-            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">
-           <h3>
-                Period 4
-            </h3>
-            </div>
-         </div>
-</div>
+<!--            <div class = "column divider" ondrop="drop(event)" ondragover="allowDrop(event)">-->
+<!--           <h3>-->
+<!--                Period 4-->
+<!--            </h3>-->
+<!--            </div>-->
+<!--         </div>-->
+<!--</div>-->
     
    
     
@@ -47,7 +72,7 @@
                    
                     <div class = "cat no" >
                     
-                     <img onclick='responsiveVoice.speak("<%= photos[i].caption %>");' width = "75%" height = "auto" src= "<%= photos[i].url %>" class = "no" draggable="true" ondragstart="drag(event)" id="drag <%= photos[i].caption %>" >
+                     <img onclick='responsiveVoice.speak("<%= photos[i].caption %>");' width = "50%" height = "auto" src= "<%= photos[i].url %>" class = "no" draggable="true" ondragstart="drag(event)" id="drag <%= photos[i].caption %>" >
                 
              
                     <h2 class = "no"  draggable="true" ondragstart="drag(event)" id="drag <%= photos[i].caption %>" >
