@@ -100,7 +100,7 @@ div.column.divider{
 }
 div.garbage{
 
-
+    position: relative;
     width: 350px;
     height: 350px;
     float:right;
