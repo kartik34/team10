@@ -11,7 +11,7 @@ div.bottom{
  
     width: 55%;
     border: 2px solid rgb(102, 0, 102);
-    height: 350px;
+    height: 70%;
 float: right;
     margin-top: -600px;
     border-radius: 25px;
@@ -104,8 +104,8 @@ div.garbage{
     width: 350px;
     height: 350px;
     float:right;
-    margin-top: -250px;
-    margin-left: -200px;
+    margin-top: -110px;
+   
  
     margin-right: 45px;
 }
